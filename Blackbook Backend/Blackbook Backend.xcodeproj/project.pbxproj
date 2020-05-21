@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,13 @@
 		53552269247704B7005C0BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552267247704B7005C0BAC /* LaunchScreen.storyboard */; };
 		53552274247704B8005C0BAC /* Blackbook_BackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552273247704B8005C0BAC /* Blackbook_BackendTests.swift */; };
 		5355227F247704B8005C0BAC /* Blackbook_BackendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */; };
+		5355228D247713E4005C0BAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5355228C247713E4005C0BAC /* GoogleService-Info.plist */; };
+		5355228E247713E4005C0BAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5355228C247713E4005C0BAC /* GoogleService-Info.plist */; };
+		5355228F247713E4005C0BAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5355228C247713E4005C0BAC /* GoogleService-Info.plist */; };
+		53552291247726CF005C0BAC /* Home:Explore_page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552290247726CF005C0BAC /* Home:Explore_page.storyboard */; };
+		53552293247726E4005C0BAC /* Map Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552292247726E4005C0BAC /* Map Page.storyboard */; };
+		53552295247726F7005C0BAC /* Calendar:Events Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552294247726F7005C0BAC /* Calendar:Events Pages.storyboard */; };
+		5355229724772708005C0BAC /* Profile Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5355229624772708005C0BAC /* Profile Pages.storyboard */; };
 		9EF2A89F581413BC44E9A3A1 /* Pods_Blackbook_Backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B25E762F7A8AC5DBDB2DBB /* Pods_Blackbook_Backend.framework */; };
 		C5872593F07B7A900A202BAA /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC4AE632803344C5C11F489 /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +65,11 @@
 		5355227A247704B8005C0BAC /* Blackbook BackendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blackbook BackendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blackbook_BackendUITests.swift; sourceTree = "<group>"; };
 		53552280247704B8005C0BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5355228C247713E4005C0BAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53552290247726CF005C0BAC /* Home:Explore_page.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Home:Explore_page.storyboard"; sourceTree = "<group>"; };
+		53552292247726E4005C0BAC /* Map Page.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Map Page.storyboard"; sourceTree = "<group>"; };
+		53552294247726F7005C0BAC /* Calendar:Events Pages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Calendar:Events Pages.storyboard"; sourceTree = "<group>"; };
+		5355229624772708005C0BAC /* Profile Pages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Profile Pages.storyboard"; sourceTree = "<group>"; };
 		58D5AA822161E2C41A6DF581 /* Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		910E91EA1F643B1AEC3DA52D /* Pods-Blackbook Backend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend.release.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend.release.xcconfig"; sourceTree = "<group>"; };
 		91D0F84B9522A902AED8A656 /* Pods_Blackbook_BackendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackbook_BackendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,9 +145,11 @@
 				53552260247704AE005C0BAC /* ContentView.swift */,
 				53552262247704B7005C0BAC /* Assets.xcassets */,
 				53552267247704B7005C0BAC /* LaunchScreen.storyboard */,
+				5355228C247713E4005C0BAC /* GoogleService-Info.plist */,
 				5355226A247704B7005C0BAC /* Info.plist */,
 				5355225D247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld */,
 				53552264247704B7005C0BAC /* Preview Content */,
+				535522982477272E005C0BAC /* Blackbook UI Pages */,
 			);
 			path = "Blackbook Backend";
 			sourceTree = "<group>";
@@ -166,6 +180,17 @@
 			path = "Blackbook BackendUITests";
 			sourceTree = "<group>";
 		};
+		535522982477272E005C0BAC /* Blackbook UI Pages */ = {
+			isa = PBXGroup;
+			children = (
+				53552294247726F7005C0BAC /* Calendar:Events Pages.storyboard */,
+				5355229624772708005C0BAC /* Profile Pages.storyboard */,
+				53552292247726E4005C0BAC /* Map Page.storyboard */,
+				53552290247726CF005C0BAC /* Home:Explore_page.storyboard */,
+			);
+			path = "Blackbook UI Pages";
+			sourceTree = "<group>";
+		};
 		F858F1FB8E55E292684C3ED2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +201,6 @@
 				DADD50EB33B7439536D8753D /* Pods-Blackbook BackendTests.debug.xcconfig */,
 				118127A0EE096D85383C3304 /* Pods-Blackbook BackendTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,6 +216,7 @@
 				53552253247704AE005C0BAC /* Frameworks */,
 				53552254247704AE005C0BAC /* Resources */,
 				5924C7A40F5DCCCE7337EB6C /* [CP] Embed Pods Frameworks */,
+				9051EBEBB40BF5F8DB2DF4DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +255,7 @@
 				53552277247704B8005C0BAC /* Frameworks */,
 				53552278247704B8005C0BAC /* Resources */,
 				81709A3C1E5943BDC13A411E /* [CP] Embed Pods Frameworks */,
+				5CA98E3FD501712BB9EFF8E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,9 +315,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5355229724772708005C0BAC /* Profile Pages.storyboard in Resources */,
 				53552269247704B7005C0BAC /* LaunchScreen.storyboard in Resources */,
+				53552293247726E4005C0BAC /* Map Page.storyboard in Resources */,
+				5355228D247713E4005C0BAC /* GoogleService-Info.plist in Resources */,
 				53552266247704B7005C0BAC /* Preview Assets.xcassets in Resources */,
 				53552263247704B7005C0BAC /* Assets.xcassets in Resources */,
+				53552295247726F7005C0BAC /* Calendar:Events Pages.storyboard in Resources */,
+				53552291247726CF005C0BAC /* Home:Explore_page.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5355228E247713E4005C0BAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5355228F247713E4005C0BAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +384,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5CA98E3FD501712BB9EFF8E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		77B4CCDE03A15324FC19D1D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +438,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9051EBEBB40BF5F8DB2DF4DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A412BFDB57E3DBDCDDBFEB74 /* [CP] Check Pods Manifest.lock */ = {

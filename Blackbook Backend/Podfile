@@ -9,6 +9,8 @@ target 'Blackbook Backend' do
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Firestore'
+	pod 'Firebase/MLVision'
+	pod 'Firebase/MLVisionTextModel'
   target 'Blackbook BackendTests' do
     inherit! :search_paths
     # Pods for testing
