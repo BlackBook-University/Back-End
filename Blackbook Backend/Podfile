@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Blackbook Backend' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Blackbook Backend
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Firestore'
+  target 'Blackbook BackendTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Blackbook BackendUITests' do
+    # Pods for testing
+  end
+
+end

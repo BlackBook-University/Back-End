@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20F5324C6630E088FA60B4F3 /* Pods_Blackbook_BackendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D0F84B9522A902AED8A656 /* Pods_Blackbook_BackendTests.framework */; };
 		5355225A247704AE005C0BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552259247704AE005C0BAC /* AppDelegate.swift */; };
 		5355225C247704AE005C0BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355225B247704AE005C0BAC /* SceneDelegate.swift */; };
 		5355225F247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5355225D247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld */; };
@@ -16,6 +17,8 @@
 		53552269247704B7005C0BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552267247704B7005C0BAC /* LaunchScreen.storyboard */; };
 		53552274247704B8005C0BAC /* Blackbook_BackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552273247704B8005C0BAC /* Blackbook_BackendTests.swift */; };
 		5355227F247704B8005C0BAC /* Blackbook_BackendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */; };
+		9EF2A89F581413BC44E9A3A1 /* Pods_Blackbook_Backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B25E762F7A8AC5DBDB2DBB /* Pods_Blackbook_Backend.framework */; };
+		C5872593F07B7A900A202BAA /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC4AE632803344C5C11F489 /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118127A0EE096D85383C3304 /* Pods-Blackbook BackendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook BackendTests.release.xcconfig"; path = "Target Support Files/Pods-Blackbook BackendTests/Pods-Blackbook BackendTests.release.xcconfig"; sourceTree = "<group>"; };
+		3BC4AE632803344C5C11F489 /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackbook_Backend_Blackbook_BackendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6A4D763FFFC80C638A1773 /* Pods-Blackbook Backend-Blackbook BackendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend-Blackbook BackendUITests.release.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45B25E762F7A8AC5DBDB2DBB /* Pods_Blackbook_Backend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackbook_Backend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53552256247704AE005C0BAC /* Blackbook Backend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackbook Backend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53552259247704AE005C0BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5355225B247704AE005C0BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		5355227A247704B8005C0BAC /* Blackbook BackendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blackbook BackendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blackbook_BackendUITests.swift; sourceTree = "<group>"; };
 		53552280247704B8005C0BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D5AA822161E2C41A6DF581 /* Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		910E91EA1F643B1AEC3DA52D /* Pods-Blackbook Backend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend.release.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend.release.xcconfig"; sourceTree = "<group>"; };
+		91D0F84B9522A902AED8A656 /* Pods_Blackbook_BackendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackbook_BackendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD9D095F37405D688BF4E2E /* Pods-Blackbook Backend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend.debug.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend.debug.xcconfig"; sourceTree = "<group>"; };
+		DADD50EB33B7439536D8753D /* Pods-Blackbook BackendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook BackendTests.debug.xcconfig"; path = "Target Support Files/Pods-Blackbook BackendTests/Pods-Blackbook BackendTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF2A89F581413BC44E9A3A1 /* Pods_Blackbook_Backend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F5324C6630E088FA60B4F3 /* Pods_Blackbook_BackendTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5872593F07B7A900A202BAA /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		424896522ACCB63491F10B42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B25E762F7A8AC5DBDB2DBB /* Pods_Blackbook_Backend.framework */,
+				3BC4AE632803344C5C11F489 /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework */,
+				91D0F84B9522A902AED8A656 /* Pods_Blackbook_BackendTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5355224D247704AE005C0BAC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				53552272247704B8005C0BAC /* Blackbook BackendTests */,
 				5355227D247704B8005C0BAC /* Blackbook BackendUITests */,
 				53552257247704AE005C0BAC /* Products */,
+				F858F1FB8E55E292684C3ED2 /* Pods */,
+				424896522ACCB63491F10B42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +166,20 @@
 			path = "Blackbook BackendUITests";
 			sourceTree = "<group>";
 		};
+		F858F1FB8E55E292684C3ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACD9D095F37405D688BF4E2E /* Pods-Blackbook Backend.debug.xcconfig */,
+				910E91EA1F643B1AEC3DA52D /* Pods-Blackbook Backend.release.xcconfig */,
+				58D5AA822161E2C41A6DF581 /* Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig */,
+				3C6A4D763FFFC80C638A1773 /* Pods-Blackbook Backend-Blackbook BackendUITests.release.xcconfig */,
+				DADD50EB33B7439536D8753D /* Pods-Blackbook BackendTests.debug.xcconfig */,
+				118127A0EE096D85383C3304 /* Pods-Blackbook BackendTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53552283247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook Backend" */;
 			buildPhases = (
+				A412BFDB57E3DBDCDDBFEB74 /* [CP] Check Pods Manifest.lock */,
 				53552252247704AE005C0BAC /* Sources */,
 				53552253247704AE005C0BAC /* Frameworks */,
 				53552254247704AE005C0BAC /* Resources */,
+				5924C7A40F5DCCCE7337EB6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53552286247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook BackendTests" */;
 			buildPhases = (
+				40541247BDB8F6C75BE230DB /* [CP] Check Pods Manifest.lock */,
 				5355226B247704B8005C0BAC /* Sources */,
 				5355226C247704B8005C0BAC /* Frameworks */,
 				5355226D247704B8005C0BAC /* Resources */,
@@ -181,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53552289247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook BackendUITests" */;
 			buildPhases = (
+				77B4CCDE03A15324FC19D1D1 /* [CP] Check Pods Manifest.lock */,
 				53552276247704B8005C0BAC /* Sources */,
 				53552277247704B8005C0BAC /* Frameworks */,
 				53552278247704B8005C0BAC /* Resources */,
+				81709A3C1E5943BDC13A411E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +310,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40541247BDB8F6C75BE230DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blackbook BackendTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5924C7A40F5DCCCE7337EB6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B4CCDE03A15324FC19D1D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blackbook Backend-Blackbook BackendUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81709A3C1E5943BDC13A411E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A412BFDB57E3DBDCDDBFEB74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blackbook Backend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53552252247704AE005C0BAC /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		53552284247704B8005C0BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD9D095F37405D688BF4E2E /* Pods-Blackbook Backend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +605,7 @@
 		};
 		53552285247704B8005C0BAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910E91EA1F643B1AEC3DA52D /* Pods-Blackbook Backend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +625,7 @@
 		};
 		53552287247704B8005C0BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DADD50EB33B7439536D8753D /* Pods-Blackbook BackendTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +647,7 @@
 		};
 		53552288247704B8005C0BAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118127A0EE096D85383C3304 /* Pods-Blackbook BackendTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +669,7 @@
 		};
 		5355228A247704B8005C0BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D5AA822161E2C41A6DF581 /* Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +689,7 @@
 		};
 		5355228B247704B8005C0BAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6A4D763FFFC80C638A1773 /* Pods-Blackbook Backend-Blackbook BackendUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

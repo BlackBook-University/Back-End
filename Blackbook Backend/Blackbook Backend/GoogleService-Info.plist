@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>175664194647-ohilf6bmso57sjvulv3sd259g85hsc48.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.175664194647-ohilf6bmso57sjvulv3sd259g85hsc48</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCwon2u7XqMc2Fq33jAgioZGAuTguThc-I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>175664194647</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Blackbook-Backend.Blackbook-Backend</string>
+	<key>PROJECT_ID</key>
+	<string>blackbook-af5f0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>blackbook-af5f0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:175664194647:ios:1908101384aaf14fb62f12</string>
+	<key>DATABASE_URL</key>
+	<string>https://blackbook-af5f0.firebaseio.com</string>
+</dict>
+</plist>
