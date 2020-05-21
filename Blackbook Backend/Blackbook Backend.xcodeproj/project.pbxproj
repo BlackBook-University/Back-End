@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5355225A247704AE005C0BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552259247704AE005C0BAC /* AppDelegate.swift */; };
+		5355225C247704AE005C0BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355225B247704AE005C0BAC /* SceneDelegate.swift */; };
+		5355225F247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5355225D247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld */; };
+		53552261247704AE005C0BAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552260247704AE005C0BAC /* ContentView.swift */; };
+		53552263247704B7005C0BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53552262247704B7005C0BAC /* Assets.xcassets */; };
+		53552266247704B7005C0BAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53552265247704B7005C0BAC /* Preview Assets.xcassets */; };
+		53552269247704B7005C0BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552267247704B7005C0BAC /* LaunchScreen.storyboard */; };
+		53552274247704B8005C0BAC /* Blackbook_BackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552273247704B8005C0BAC /* Blackbook_BackendTests.swift */; };
+		5355227F247704B8005C0BAC /* Blackbook_BackendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53552270247704B8005C0BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5355224E247704AE005C0BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53552255247704AE005C0BAC;
+			remoteInfo = "Blackbook Backend";
+		};
+		5355227B247704B8005C0BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5355224E247704AE005C0BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53552255247704AE005C0BAC;
+			remoteInfo = "Blackbook Backend";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53552256247704AE005C0BAC /* Blackbook Backend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackbook Backend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53552259247704AE005C0BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5355225B247704AE005C0BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5355225E247704AE005C0BAC /* Blackbook_Backend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blackbook_Backend.xcdatamodel; sourceTree = "<group>"; };
+		53552260247704AE005C0BAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53552262247704B7005C0BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53552265247704B7005C0BAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53552268247704B7005C0BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5355226A247704B7005C0BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5355226F247704B8005C0BAC /* Blackbook BackendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blackbook BackendTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53552273247704B8005C0BAC /* Blackbook_BackendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blackbook_BackendTests.swift; sourceTree = "<group>"; };
+		53552275247704B8005C0BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5355227A247704B8005C0BAC /* Blackbook BackendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blackbook BackendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blackbook_BackendUITests.swift; sourceTree = "<group>"; };
+		53552280247704B8005C0BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53552253247704AE005C0BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5355226C247704B8005C0BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53552277247704B8005C0BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5355224D247704AE005C0BAC = {
+			isa = PBXGroup;
+			children = (
+				53552258247704AE005C0BAC /* Blackbook Backend */,
+				53552272247704B8005C0BAC /* Blackbook BackendTests */,
+				5355227D247704B8005C0BAC /* Blackbook BackendUITests */,
+				53552257247704AE005C0BAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53552257247704AE005C0BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53552256247704AE005C0BAC /* Blackbook Backend.app */,
+				5355226F247704B8005C0BAC /* Blackbook BackendTests.xctest */,
+				5355227A247704B8005C0BAC /* Blackbook BackendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53552258247704AE005C0BAC /* Blackbook Backend */ = {
+			isa = PBXGroup;
+			children = (
+				53552259247704AE005C0BAC /* AppDelegate.swift */,
+				5355225B247704AE005C0BAC /* SceneDelegate.swift */,
+				53552260247704AE005C0BAC /* ContentView.swift */,
+				53552262247704B7005C0BAC /* Assets.xcassets */,
+				53552267247704B7005C0BAC /* LaunchScreen.storyboard */,
+				5355226A247704B7005C0BAC /* Info.plist */,
+				5355225D247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld */,
+				53552264247704B7005C0BAC /* Preview Content */,
+			);
+			path = "Blackbook Backend";
+			sourceTree = "<group>";
+		};
+		53552264247704B7005C0BAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				53552265247704B7005C0BAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53552272247704B8005C0BAC /* Blackbook BackendTests */ = {
+			isa = PBXGroup;
+			children = (
+				53552273247704B8005C0BAC /* Blackbook_BackendTests.swift */,
+				53552275247704B8005C0BAC /* Info.plist */,
+			);
+			path = "Blackbook BackendTests";
+			sourceTree = "<group>";
+		};
+		5355227D247704B8005C0BAC /* Blackbook BackendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5355227E247704B8005C0BAC /* Blackbook_BackendUITests.swift */,
+				53552280247704B8005C0BAC /* Info.plist */,
+			);
+			path = "Blackbook BackendUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53552255247704AE005C0BAC /* Blackbook Backend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53552283247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook Backend" */;
+			buildPhases = (
+				53552252247704AE005C0BAC /* Sources */,
+				53552253247704AE005C0BAC /* Frameworks */,
+				53552254247704AE005C0BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blackbook Backend";
+			productName = "Blackbook Backend";
+			productReference = 53552256247704AE005C0BAC /* Blackbook Backend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5355226E247704B8005C0BAC /* Blackbook BackendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53552286247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook BackendTests" */;
+			buildPhases = (
+				5355226B247704B8005C0BAC /* Sources */,
+				5355226C247704B8005C0BAC /* Frameworks */,
+				5355226D247704B8005C0BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53552271247704B8005C0BAC /* PBXTargetDependency */,
+			);
+			name = "Blackbook BackendTests";
+			productName = "Blackbook BackendTests";
+			productReference = 5355226F247704B8005C0BAC /* Blackbook BackendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53552279247704B8005C0BAC /* Blackbook BackendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53552289247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook BackendUITests" */;
+			buildPhases = (
+				53552276247704B8005C0BAC /* Sources */,
+				53552277247704B8005C0BAC /* Frameworks */,
+				53552278247704B8005C0BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5355227C247704B8005C0BAC /* PBXTargetDependency */,
+			);
+			name = "Blackbook BackendUITests";
+			productName = "Blackbook BackendUITests";
+			productReference = 5355227A247704B8005C0BAC /* Blackbook BackendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5355224E247704AE005C0BAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Blackbook;
+				TargetAttributes = {
+					53552255247704AE005C0BAC = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					5355226E247704B8005C0BAC = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 53552255247704AE005C0BAC;
+					};
+					53552279247704B8005C0BAC = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 53552255247704AE005C0BAC;
+					};
+				};
+			};
+			buildConfigurationList = 53552251247704AE005C0BAC /* Build configuration list for PBXProject "Blackbook Backend" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5355224D247704AE005C0BAC;
+			productRefGroup = 53552257247704AE005C0BAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53552255247704AE005C0BAC /* Blackbook Backend */,
+				5355226E247704B8005C0BAC /* Blackbook BackendTests */,
+				53552279247704B8005C0BAC /* Blackbook BackendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53552254247704AE005C0BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53552269247704B7005C0BAC /* LaunchScreen.storyboard in Resources */,
+				53552266247704B7005C0BAC /* Preview Assets.xcassets in Resources */,
+				53552263247704B7005C0BAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5355226D247704B8005C0BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53552278247704B8005C0BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53552252247704AE005C0BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5355225A247704AE005C0BAC /* AppDelegate.swift in Sources */,
+				5355225C247704AE005C0BAC /* SceneDelegate.swift in Sources */,
+				53552261247704AE005C0BAC /* ContentView.swift in Sources */,
+				5355225F247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5355226B247704B8005C0BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53552274247704B8005C0BAC /* Blackbook_BackendTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53552276247704B8005C0BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5355227F247704B8005C0BAC /* Blackbook_BackendUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53552271247704B8005C0BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53552255247704AE005C0BAC /* Blackbook Backend */;
+			targetProxy = 53552270247704B8005C0BAC /* PBXContainerItemProxy */;
+		};
+		5355227C247704B8005C0BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53552255247704AE005C0BAC /* Blackbook Backend */;
+			targetProxy = 5355227B247704B8005C0BAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53552267247704B7005C0BAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53552268247704B7005C0BAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53552281247704B8005C0BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53552282247704B8005C0BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53552284247704B8005C0BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Blackbook Backend/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Blackbook Backend/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blackbook-Backend.Blackbook-Backend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53552285247704B8005C0BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Blackbook Backend/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Blackbook Backend/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blackbook-Backend.Blackbook-Backend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		53552287247704B8005C0BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Blackbook BackendTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blackbook-Backend.Blackbook-BackendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blackbook Backend.app/Blackbook Backend";
+			};
+			name = Debug;
+		};
+		53552288247704B8005C0BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Blackbook BackendTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blackbook-Backend.Blackbook-BackendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blackbook Backend.app/Blackbook Backend";
+			};
+			name = Release;
+		};
+		5355228A247704B8005C0BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Blackbook BackendUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blackbook-Backend.Blackbook-BackendUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Blackbook Backend";
+			};
+			name = Debug;
+		};
+		5355228B247704B8005C0BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Blackbook BackendUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blackbook-Backend.Blackbook-BackendUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Blackbook Backend";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53552251247704AE005C0BAC /* Build configuration list for PBXProject "Blackbook Backend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53552281247704B8005C0BAC /* Debug */,
+				53552282247704B8005C0BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53552283247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook Backend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53552284247704B8005C0BAC /* Debug */,
+				53552285247704B8005C0BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53552286247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook BackendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53552287247704B8005C0BAC /* Debug */,
+				53552288247704B8005C0BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53552289247704B8005C0BAC /* Build configuration list for PBXNativeTarget "Blackbook BackendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5355228A247704B8005C0BAC /* Debug */,
+				5355228B247704B8005C0BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5355225D247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5355225E247704AE005C0BAC /* Blackbook_Backend.xcdatamodel */,
+			);
+			currentVersion = 5355225E247704AE005C0BAC /* Blackbook_Backend.xcdatamodel */;
+			path = Blackbook_Backend.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5355224E247704AE005C0BAC /* Project object */;
+}

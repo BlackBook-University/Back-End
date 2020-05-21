@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-YG-Jaw">
+                                <rect key="frame" x="68" y="399" width="285" height="247"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZB-5e-VtH">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="FacebookSignin:" destination="XaX-tH-i4f" eventType="touchUpInside" id="sCk-xZ-5B2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOS-Jw-zDX">
+                                        <rect key="frame" x="0.0" y="89" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sign in with Google" backgroundImage="Google">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GoogleSignIn:" destination="XaX-tH-i4f" eventType="touchUpInside" id="fQS-3W-3v4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HK6-mD-ASM">
+                                        <rect key="frame" x="0.0" y="178" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sign up with Email" backgroundImage="Email">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="EmailSignIn:" destination="XaX-tH-i4f" eventType="touchUpInside" id="6Aj-Qb-jiK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Forgot Password? Forgot Username?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" background="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="6B9-XA-cRJ">
+                                <rect key="frame" x="75" y="654" width="264" height="34"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ5-ra-xd8">
+                                <rect key="frame" x="68" y="370.5" width="285" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="White" translatesAutoresizingMaskIntoConstraints="NO" id="TTg-C3-hb6">
+                                <rect key="frame" x="-35" y="-33" width="490" height="484"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TTg-C3-hb6" secondAttribute="height" multiplier="61:63" constant="21.365079365079339" id="FYH-Hp-sGc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TTg-C3-hb6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" priority="100" constant="3" id="COa-vP-ZwO"/>
+                            <constraint firstItem="ZQ5-ra-xd8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Sp-YG-Jaw" secondAttribute="trailing" id="JNe-Yx-anX"/>
+                            <constraint firstAttribute="bottom" secondItem="TTg-C3-hb6" secondAttribute="bottom" constant="445" id="JOs-GE-yis"/>
+                            <constraint firstItem="6B9-XA-cRJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MIe-xG-0C3"/>
+                            <constraint firstItem="TTg-C3-hb6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-239" id="Wzj-QP-Q8E"/>
+                            <constraint firstItem="1Sp-YG-Jaw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="3.5" id="XxZ-ob-bfy"/>
+                            <constraint firstItem="1Sp-YG-Jaw" firstAttribute="top" secondItem="ZQ5-ra-xd8" secondAttribute="bottom" constant="8" id="gMC-vc-sEA"/>
+                            <constraint firstItem="ZQ5-ra-xd8" firstAttribute="leading" secondItem="1Sp-YG-Jaw" secondAttribute="leading" id="rcE-68-L0f"/>
+                            <constraint firstItem="6B9-XA-cRJ" firstAttribute="top" secondItem="1Sp-YG-Jaw" secondAttribute="bottom" constant="8" id="sah-Sj-HSb"/>
+                            <constraint firstItem="TTg-C3-hb6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-33" id="svF-yA-NR2"/>
+                            <constraint firstItem="1Sp-YG-Jaw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="74.5" id="yUa-84-Fzx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XaX-tH-i4f" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3cp-oS-AWd">
+            <objects>
+                <viewController id="j8Z-wc-nmX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DS4-l6-Dyu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jP0-Ge-v8m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgS-nW-AXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BottomGradient" width="414" height="298"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+        <image name="White" width="300" height="300"/>
+    </resources>
+</document>
