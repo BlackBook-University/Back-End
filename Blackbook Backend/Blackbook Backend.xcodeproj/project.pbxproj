@@ -24,6 +24,9 @@
 		53552293247726E4005C0BAC /* Map Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552292247726E4005C0BAC /* Map Page.storyboard */; };
 		53552295247726F7005C0BAC /* Calendar:Events Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53552294247726F7005C0BAC /* Calendar:Events Pages.storyboard */; };
 		5355229724772708005C0BAC /* Profile Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5355229624772708005C0BAC /* Profile Pages.storyboard */; };
+		5355229A247749D8005C0BAC /* Mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53552299247749D8005C0BAC /* Mapview.swift */; };
+		5355229C247749FA005C0BAC /* Calendarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355229B247749FA005C0BAC /* Calendarview.swift */; };
+		5355229E24774A19005C0BAC /* Profileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355229D24774A19005C0BAC /* Profileview.swift */; };
 		9EF2A89F581413BC44E9A3A1 /* Pods_Blackbook_Backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B25E762F7A8AC5DBDB2DBB /* Pods_Blackbook_Backend.framework */; };
 		C5872593F07B7A900A202BAA /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC4AE632803344C5C11F489 /* Pods_Blackbook_Backend_Blackbook_BackendUITests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +73,9 @@
 		53552292247726E4005C0BAC /* Map Page.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Map Page.storyboard"; sourceTree = "<group>"; };
 		53552294247726F7005C0BAC /* Calendar:Events Pages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Calendar:Events Pages.storyboard"; sourceTree = "<group>"; };
 		5355229624772708005C0BAC /* Profile Pages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Profile Pages.storyboard"; sourceTree = "<group>"; };
+		53552299247749D8005C0BAC /* Mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapview.swift; sourceTree = "<group>"; };
+		5355229B247749FA005C0BAC /* Calendarview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendarview.swift; sourceTree = "<group>"; };
+		5355229D24774A19005C0BAC /* Profileview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profileview.swift; sourceTree = "<group>"; };
 		58D5AA822161E2C41A6DF581 /* Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend-Blackbook BackendUITests/Pods-Blackbook Backend-Blackbook BackendUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		910E91EA1F643B1AEC3DA52D /* Pods-Blackbook Backend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackbook Backend.release.xcconfig"; path = "Target Support Files/Pods-Blackbook Backend/Pods-Blackbook Backend.release.xcconfig"; sourceTree = "<group>"; };
 		91D0F84B9522A902AED8A656 /* Pods_Blackbook_BackendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackbook_BackendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,13 +149,16 @@
 				53552259247704AE005C0BAC /* AppDelegate.swift */,
 				5355225B247704AE005C0BAC /* SceneDelegate.swift */,
 				53552260247704AE005C0BAC /* ContentView.swift */,
+				53552299247749D8005C0BAC /* Mapview.swift */,
+				5355229B247749FA005C0BAC /* Calendarview.swift */,
+				5355229D24774A19005C0BAC /* Profileview.swift */,
 				53552262247704B7005C0BAC /* Assets.xcassets */,
 				53552267247704B7005C0BAC /* LaunchScreen.storyboard */,
 				5355228C247713E4005C0BAC /* GoogleService-Info.plist */,
 				5355226A247704B7005C0BAC /* Info.plist */,
 				5355225D247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld */,
-				53552264247704B7005C0BAC /* Preview Content */,
 				535522982477272E005C0BAC /* Blackbook UI Pages */,
+				53552264247704B7005C0BAC /* Preview Content */,
 			);
 			path = "Blackbook Backend";
 			sourceTree = "<group>";
@@ -489,6 +498,9 @@
 				5355225A247704AE005C0BAC /* AppDelegate.swift in Sources */,
 				5355225C247704AE005C0BAC /* SceneDelegate.swift in Sources */,
 				53552261247704AE005C0BAC /* ContentView.swift in Sources */,
+				5355229E24774A19005C0BAC /* Profileview.swift in Sources */,
+				5355229A247749D8005C0BAC /* Mapview.swift in Sources */,
+				5355229C247749FA005C0BAC /* Calendarview.swift in Sources */,
 				5355225F247704AE005C0BAC /* Blackbook_Backend.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
