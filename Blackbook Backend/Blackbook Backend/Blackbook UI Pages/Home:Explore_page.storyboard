@@ -1,7 +1,125 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Blackbook-->
+        <scene sceneID="Vt7-9Z-lg7">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="0OF-J5-xvW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Py-L6-Pz2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="White (1)" translatesAutoresizingMaskIntoConstraints="NO" id="S41-Nq-vMd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-mV-Nx4">
+                                <rect key="frame" x="0.0" y="119" width="414" height="105"/>
+                                <subviews>
+                                    <searchBar contentMode="scaleAspectFit" text="Search Blackbook...." translatesAutoresizingMaskIntoConstraints="NO" id="8Eh-cQ-Xqu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tabBar tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux9-7O-jZC">
+                                        <rect key="frame" x="0.0" y="56" width="414" height="49"/>
+                                        <color key="backgroundColor" red="0.99598187208175659" green="0.92011511325836182" blue="0.79934978485107422" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="2Ft-5T-1Ss"/>
+                                            <constraint firstAttribute="height" constant="49" id="3ew-um-7be"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="Home" image="house" catalog="system" id="ELa-Ho-NUZ">
+                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Map" image="mappin.circle" catalog="system" id="D6O-Rb-TcO">
+                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Calendar" image="calendar" catalog="system" id="jGZ-i5-TOE">
+                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Profile" image="person" catalog="system" id="LY9-ch-zjE">
+                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tabBarItem>
+                                        </items>
+                                        <color key="barTintColor" red="0.98817425966262817" green="0.91219633817672729" blue="0.79545122385025024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tabBar>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-wj-NJi">
+                                <rect key="frame" x="180" y="426" width="55" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5xk-ix-tFz" kind="show" id="rDW-i1-WNf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.87450980392156863" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="MfF-vh-qPT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blackbook" id="Ktg-hx-VUY"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Moi-ve-wlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="pyH-Vh-AjS">
+            <objects>
+                <viewController id="5xk-ix-tFz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fhf-q9-oHd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Offwhite"/>
+                        <viewLayoutGuide key="safeArea" id="h7r-aZ-Pju"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="bXm-tx-Mar"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxy-Gc-cjk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2035" y="94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yz5-UJ-l1Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Boo-ax-xUa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x9J-AT-28t">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0OF-J5-xvW" kind="relationship" relationship="rootViewController" id="63x-mS-tq3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrN-sW-1aT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="White (1)" width="600" height="600"/>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="mappin.circle" catalog="system" width="64" height="60"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <namedColor name="Offwhite">
+            <color red="0.98431372549019602" green="0.87450980392156863" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

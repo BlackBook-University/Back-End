@@ -7,46 +7,101 @@
 //
 
 import SwiftUI
+import UIKit
+import Foundation
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
+            Blackbooklogo()
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image(systemName: "house")
+                        Text("Home")
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            Blackbooklogo()
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(systemName: "mappin.circle")
+                        Text("Map")
                     }
                 }
                 .tag(1)
-            Text("Third View")
-                .font(.title)
-                .tabItem{
+           Blackbooklogo()
+                .tabItem {
                     VStack {
-                        Image("third")
-                        Text("Third")
+                        Image(systemName: "calendar")
+                        Text("Calendar")
                     }
                 }
-            .tag(2)
+                .tag(2)
+            Blackbooklogo()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.fill")
+                        Text("Profile")
+                    }
+                }
+                .tag(3)
+        }
+        .padding(0.0)
+        .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+        .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/-610.0/*@END_MENU_TOKEN@*/)
+        
+        }
+    }
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        ZStack {
+            ContentView()
+            .background(Color("Offwhite"))
+            .edgesIgnoringSafeArea(.vertical)
+//            Image("Black (1)")
+//                .resizable()
+//                .frame(width: 400.0, height: 400.0)
+//                .clipShape(Circle())
+//                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/-350.0/*@END_MENU_TOKEN@*/)
+//                .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+//                .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
+        }
+        
+    }
+}
+
+extension Color {
+    static let dominantColor = Color("Offwhite")
+}
+
+
+struct Blackbooklogo: View {
+     @State private var searchTerm: String = ""
+    var body: some View {
+        ZStack{
+            Image("Black (1)")
+                .resizable()
+                .frame(width: 400.0, height: 400.0)
+                .clipShape(Circle())
+                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/-350.0/*@END_MENU_TOKEN@*/)
+                .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+                .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
+            
+            Color("Offwhite")
+                .edgesIgnoringSafeArea(.vertical)
+         
+            SearchBar(text: $searchTerm)
+                .background(Color.black)
+                .padding(.top, 10.0)
+                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/391.0/*@END_MENU_TOKEN@*/)
                 
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
