@@ -8,6 +8,7 @@
 
 import SwiftUI
 import UIKit
+import Firebase
 import Foundation
 
 struct ContentView: View {
@@ -15,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection){
-            Blackbooklogo()
+               Home()
                 .tabItem {
                     VStack {
                         Image(systemName: "house")
@@ -23,15 +24,15 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            Blackbooklogo()
+            Calendarview()
                 .tabItem {
                     VStack {
-                        Image(systemName: "mappin.circle")
+                        Image(systemName: "map")
                         Text("Map")
                     }
                 }
                 .tag(1)
-           Blackbooklogo()
+           Calendarview()
                 .tabItem {
                     VStack {
                         Image(systemName: "calendar")
@@ -39,7 +40,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(2)
-            Blackbooklogo()
+            Calendarview()
                 .tabItem {
                     VStack {
                         Image(systemName: "person.fill")
@@ -47,60 +48,154 @@ struct ContentView: View {
                     }
                 }
                 .tag(3)
-        }
-        .padding(0.0)
-        .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-        .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/-610.0/*@END_MENU_TOKEN@*/)
+        }.accentColor(.blue)
+            .edgesIgnoringSafeArea(.top)
+    }
+}
+
+
+struct postCell: View {
+    
+    var name = ""
+    var id = ""
+    var pic = ""
+    var image = ""
+    var msg = ""
+    
+    var body: some View {
         
+        HStack
+        {
+//            Animation(url: URL(string: image)!).resizable().frame(width: 50, height: 50).clipShape(Circle())
+        
+        VStack {
+            Text(name).fontWeight(.heavy)
+            Text(id)
+            Text(msg)
+            
+//            Animation(url: URL(string: image)!).resizable().frame(height: 300).clipShape(Circle())
+        }
         }
     }
-
+}
 
 struct ContentView_Previews: PreviewProvider {
+//    static let blackbook = Blackbooklogo()
     static var previews: some View {
-        
-        ZStack {
-            ContentView()
-            .background(Color("Offwhite"))
-            .edgesIgnoringSafeArea(.vertical)
-//            Image("Black (1)")
-//                .resizable()
-//                .frame(width: 400.0, height: 400.0)
-//                .clipShape(Circle())
-//                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/-350.0/*@END_MENU_TOKEN@*/)
-//                .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-//                .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
-        }
-        
+        ContentView()
     }
 }
 
-extension Color {
-    static let dominantColor = Color("Offwhite")
+struct datatype : Identifiable {
+    
+    var id: String
+    var name: String
+    var msg: String
+    var repost: String
+    var likes: String
+    var pic: String
+    var url: String
+    var tagId: String
+    
 }
 
+class getData: ObservableObject {
+    
+    @Published var datas = [datatype]()
+    
+    init() {
+        
+        let db = Firestore.firestore()
+        db.collection("posts").addSnapshotListener {(snap, err) in
+            
+            if err != nil {
+                
+                print((err?.localizedDescription)!)
+                return
+            }
+            
+            for i in snap!.documentChanges{
+                
+                if i.type == .added{
+                    
+                    let id = i.document.documentID
+                    let name = i.document.get("name") as! String
+                    let msg = i.document.get("msg") as! String
+                    let repost = i.document.get("repost") as! String
+                    let likes = i.document.get("likes") as! String
+                    let pic = i.document.get("pic") as! String
+                    let url = i.document.get("url") as! String
+                    let tagID = i.document.get("id") as! String
+                    
+                    DispatchQueue.main.async {
+                        self.datas.append(datatype(id: id, name: name, msg: msg, repost: repost, likes: likes, pic: pic, url: url, tagId: tagID))
+                    }
+                }
+            }
+    }
+    
+}
+}
 
 struct Blackbooklogo: View {
      @State private var searchTerm: String = ""
     var body: some View {
         ZStack{
+
             Image("Black (1)")
                 .resizable()
                 .frame(width: 400.0, height: 400.0)
-                .clipShape(Circle())
-                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/-350.0/*@END_MENU_TOKEN@*/)
+                .position(x: 205, y: 25)
                 .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
                 .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
-            
-            Color("Offwhite")
-                .edgesIgnoringSafeArea(.vertical)
+                .background(Color("Offwhite"))
+                .edgesIgnoringSafeArea(.all)
          
             SearchBar(text: $searchTerm)
-                .background(Color.black)
-                .padding(.top, 10.0)
-                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/391.0/*@END_MENU_TOKEN@*/)
+                .position(x: 205, y: 150)
+                .foregroundColor(Color("Offwhite"))
+                
                 
         }
+    }
+}
+    
+
+struct Home: View {
+    
+    @ObservedObject var observedData = getData()
+    
+    var body: some View {
+        
+        NavigationView {
+            
+            ZStack{
+                
+                List(0..<15){ i in
+                    Text("Post \(i)")
+//                    postCell(name: i.name, id: i.tagId, pic: i.pic, image: i.image, msg: i.msg)
+                }
+                
+            VStack {
+                
+                Spacer()
+                HStack {
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image("Blackbook(book)").resizable().frame(width: 50, height: 50).scaledToFit().padding()
+                    }.background(Color("BlackbookBlue")).foregroundColor(.white)
+                    .clipShape(Circle())
+                    
+                }.padding()
+            }
+        }.navigationBarTitle("Blackbook", displayMode: .inline)
+                .navigationBarItems(leading: Image("White").resizable().frame(width: 35, height: 35).clipShape(Circle()).onTapGesture {
+                    print("Slide out menu....")
+                })
+    }
     }
 }
 
