@@ -446,7 +446,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noz-Jb-LRZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.99998790029999995" blue="0.99999219179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="cft-gS-AqR"/>
                                 </constraints>
@@ -488,26 +488,50 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Welcome to Blackbook!!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AY4-Y5-QKd">
-                                                    <rect key="frame" x="64" y="46" width="326" height="64"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome to Blackbook!!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AY4-Y5-QKd">
+                                                    <rect key="frame" x="68" y="51" width="326" height="72"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FEz-K2-yGR">
+                                                    <rect key="frame" x="68" y="118" width="326" height="29"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZo-qh-HoJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="108.5" height="29"/>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-qf-Rss">
+                                                            <rect key="frame" x="108.5" y="0.0" width="109" height="29"/>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-Xz-Pdy">
+                                                            <rect key="frame" x="217.5" y="0.0" width="108.5" height="29"/>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="326" id="OZO-pF-8Uk"/>
+                                                        <constraint firstAttribute="height" constant="29" id="sdd-o3-CnW"/>
+                                                    </constraints>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="AY4-Y5-QKd" firstAttribute="leading" secondItem="JB9-lN-iUA" secondAttribute="leading" id="3rL-aP-1qa"/>
                                                 <constraint firstItem="JB9-lN-iUA" firstAttribute="top" secondItem="Qlk-wy-3ab" secondAttribute="topMargin" constant="-3" id="BBj-8U-wpv"/>
                                                 <constraint firstItem="AY4-Y5-QKd" firstAttribute="top" secondItem="Qlk-wy-3ab" secondAttribute="topMargin" constant="40" id="Bdd-8b-syX"/>
+                                                <constraint firstItem="FEz-K2-yGR" firstAttribute="top" secondItem="AY4-Y5-QKd" secondAttribute="bottom" constant="-5" id="Gu6-si-WXB"/>
                                                 <constraint firstItem="AY4-Y5-QKd" firstAttribute="leading" secondItem="JB9-lN-iUA" secondAttribute="leading" id="KhB-Bg-R7x"/>
                                                 <constraint firstItem="F0o-Vf-MW0" firstAttribute="leading" secondItem="Qlk-wy-3ab" secondAttribute="leading" constant="20" id="VTZ-KG-XjG"/>
                                                 <constraint firstItem="AY4-Y5-QKd" firstAttribute="top" secondItem="JB9-lN-iUA" secondAttribute="bottom" constant="-12" id="Xzf-9L-rrj"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="AY4-Y5-QKd" secondAttribute="bottom" constant="13" id="aW7-IL-Hp0"/>
                                                 <constraint firstItem="tcV-8G-AGw" firstAttribute="centerY" secondItem="JB9-lN-iUA" secondAttribute="centerY" id="fFk-W8-AVJ"/>
+                                                <constraint firstItem="FEz-K2-yGR" firstAttribute="width" secondItem="AY4-Y5-QKd" secondAttribute="width" multiplier="0.613497" constant="126" id="faD-2W-BPG"/>
                                                 <constraint firstItem="AY4-Y5-QKd" firstAttribute="trailing" secondItem="Qlk-wy-3ab" secondAttribute="trailingMargin" id="hlh-D3-wOL"/>
                                                 <constraint firstItem="F0o-Vf-MW0" firstAttribute="top" secondItem="Qlk-wy-3ab" secondAttribute="top" id="iEz-le-S5I"/>
                                                 <constraint firstItem="tcV-8G-AGw" firstAttribute="top" secondItem="JB9-lN-iUA" secondAttribute="top" id="ljF-CS-cpM"/>
+                                                <constraint firstItem="FEz-K2-yGR" firstAttribute="leading" secondItem="AY4-Y5-QKd" secondAttribute="leading" id="loo-VX-PaO"/>
                                                 <constraint firstItem="tcV-8G-AGw" firstAttribute="leading" secondItem="JB9-lN-iUA" secondAttribute="trailing" constant="8" symbolic="YES" id="pOI-yO-buw"/>
                                                 <constraint firstItem="JB9-lN-iUA" firstAttribute="leading" secondItem="F0o-Vf-MW0" secondAttribute="trailing" constant="8" id="q2a-WC-3ls"/>
                                             </constraints>

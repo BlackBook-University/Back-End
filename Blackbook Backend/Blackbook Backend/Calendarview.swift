@@ -10,7 +10,15 @@ import SwiftUI
 
 struct Calendarview: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            GeometryReader { geo in
+                Image("Black (1)")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: geo.size.width)
+                    .position(x: 205, y: 30)
+            }
+        }
     }
 }
 

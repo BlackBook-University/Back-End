@@ -3,123 +3,210 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Blackbook-->
-        <scene sceneID="Vt7-9Z-lg7">
+        <scene sceneID="X2Y-Ar-J36">
             <objects>
-                <viewController storyboardIdentifier="Home" id="0OF-J5-xvW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4Py-L6-Pz2">
+                <viewController storyboardIdentifier="Home" id="Xal-tA-KTh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFv-jI-DGK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="White (1)" translatesAutoresizingMaskIntoConstraints="NO" id="S41-Nq-vMd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-mV-Nx4">
-                                <rect key="frame" x="0.0" y="119" width="414" height="105"/>
-                                <subviews>
-                                    <searchBar contentMode="scaleAspectFit" text="Search Blackbook...." translatesAutoresizingMaskIntoConstraints="NO" id="8Eh-cQ-Xqu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </searchBar>
-                                    <tabBar tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux9-7O-jZC">
-                                        <rect key="frame" x="0.0" y="56" width="414" height="49"/>
-                                        <color key="backgroundColor" red="0.99598187208175659" green="0.92011511325836182" blue="0.79934978485107422" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="414" id="2Ft-5T-1Ss"/>
-                                            <constraint firstAttribute="height" constant="49" id="3ew-um-7be"/>
-                                        </constraints>
-                                        <items>
-                                            <tabBarItem title="Home" image="house" catalog="system" id="ELa-Ho-NUZ">
-                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </tabBarItem>
-                                            <tabBarItem title="Map" image="mappin.circle" catalog="system" id="D6O-Rb-TcO">
-                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </tabBarItem>
-                                            <tabBarItem title="Calendar" image="calendar" catalog="system" id="jGZ-i5-TOE">
-                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </tabBarItem>
-                                            <tabBarItem title="Profile" image="person" catalog="system" id="LY9-ch-zjE">
-                                                <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </tabBarItem>
-                                        </items>
-                                        <color key="barTintColor" red="0.98817425966262817" green="0.91219633817672729" blue="0.79545122385025024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </tabBar>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-wj-NJi">
+                            <searchBar contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" text="Search Blackbook...." translatesAutoresizingMaskIntoConstraints="NO" id="8Eh-cQ-Xqu">
+                                <rect key="frame" x="0.0" y="128" width="414" height="56"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tabBar tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ux9-7O-jZC">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" red="0.99598187208175659" green="0.92011511325836182" blue="0.79934978485107422" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="2Ft-5T-1Ss"/>
+                                    <constraint firstAttribute="height" constant="49" id="3ew-um-7be"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="DeA-SK-kbU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="QFc-Lj-Lzy"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="ELa-Ho-NUZ">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Map" image="map" catalog="system" id="D6O-Rb-TcO">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Calendar" image="calendar" catalog="system" id="jGZ-i5-TOE">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Profile" image="person" catalog="system" id="LY9-ch-zjE">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                </items>
+                                <color key="barTintColor" red="0.98817425966262817" green="0.91219633817672729" blue="0.79545122385025024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-wj-NJi">
                                 <rect key="frame" x="180" y="426" width="55" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="5xk-ix-tFz" kind="show" id="rDW-i1-WNf"/>
-                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White (1)" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S41-Nq-vMd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Faa-6D-M2I"/>
+                                    <constraint firstAttribute="height" constant="128" id="Wgj-GU-hgW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98431372549019602" green="0.87450980392156863" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="MfF-vh-qPT"/>
+                        <color key="backgroundColor" red="0.98439329860000002" green="0.87377280000000002" blue="0.71282243729999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="S41-Nq-vMd" firstAttribute="top" secondItem="nFv-jI-DGK" secondAttribute="top" id="0h0-b1-1xm"/>
+                            <constraint firstItem="S41-Nq-vMd" firstAttribute="leading" secondItem="qKl-rY-yHW" secondAttribute="leading" id="16Y-XX-5Ig"/>
+                            <constraint firstItem="ux9-7O-jZC" firstAttribute="centerX" secondItem="rjK-wj-NJi" secondAttribute="centerX" id="1CF-Eq-ktT"/>
+                            <constraint firstItem="S41-Nq-vMd" firstAttribute="trailing" secondItem="qKl-rY-yHW" secondAttribute="trailing" id="6pp-w5-09V"/>
+                            <constraint firstItem="ux9-7O-jZC" firstAttribute="trailing" secondItem="8Eh-cQ-Xqu" secondAttribute="trailing" id="93B-Ul-GUG"/>
+                            <constraint firstItem="8Eh-cQ-Xqu" firstAttribute="top" secondItem="qKl-rY-yHW" secondAttribute="top" constant="84" id="H0m-rq-5Fa"/>
+                            <constraint firstItem="rjK-wj-NJi" firstAttribute="centerY" secondItem="nFv-jI-DGK" secondAttribute="centerY" id="I7k-U5-hhw"/>
+                            <constraint firstItem="ux9-7O-jZC" firstAttribute="leading" secondItem="8Eh-cQ-Xqu" secondAttribute="leading" id="SHI-nf-O9j"/>
+                            <constraint firstItem="rjK-wj-NJi" firstAttribute="leading" secondItem="qKl-rY-yHW" secondAttribute="leading" constant="180" id="cAg-nN-q5I"/>
+                            <constraint firstItem="S41-Nq-vMd" firstAttribute="top" secondItem="nFv-jI-DGK" secondAttribute="topMargin" constant="-44" id="oH6-zf-mei"/>
+                            <constraint firstItem="ux9-7O-jZC" firstAttribute="leading" secondItem="S41-Nq-vMd" secondAttribute="leading" id="w9y-sB-B0z"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ux9-7O-jZC" secondAttribute="bottom" constant="-34" id="yk6-0D-i1b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qKl-rY-yHW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Blackbook" id="Ktg-hx-VUY"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Moi-ve-wlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NwP-7N-olS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+            <point key="canvasLocation" x="1151" y="94"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="pyH-Vh-AjS">
+        <!--View Controller-->
+        <scene sceneID="Wf0-C1-Glu">
             <objects>
-                <viewController id="5xk-ix-tFz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fhf-q9-oHd">
+                <viewController id="Pga-8q-NHe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAo-R0-g7c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="Offwhite"/>
-                        <viewLayoutGuide key="safeArea" id="h7r-aZ-Pju"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blackbook(book)" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7F-EN-GDP">
+                                <rect key="frame" x="87" y="0.0" width="240" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="YnH-aI-rql"/>
+                                </constraints>
+                            </imageView>
+                            <tabBar tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1S-dl-5Fb">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" red="0.9959818721" green="0.92011511329999995" blue="0.79934978489999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="P8h-2N-JcC"/>
+                                    <constraint firstAttribute="height" constant="49" id="WA5-bc-zk0"/>
+                                    <constraint firstAttribute="width" constant="414" id="byz-UM-lid"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="dT4-Q3-OGc"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="ygz-KO-vbd">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Map" image="map" catalog="system" id="n4G-PL-wgj">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Calendar" image="calendar" catalog="system" id="SuH-Nk-STc">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Profile" image="person" catalog="system" id="Qvv-YT-YgT">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                </items>
+                                <color key="barTintColor" red="0.98817425969999995" green="0.91219633820000001" blue="0.7954512239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tabBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jwn-mW-sy0">
+                                <rect key="frame" x="0.0" y="144" width="414" height="353"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Deals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg4-4S-EJl">
+                                <rect key="frame" x="128.5" y="505" width="157" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.99998790029999995" blue="0.99999219179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Deal #1" translatesAutoresizingMaskIntoConstraints="NO" id="aya-99-oZh">
+                                <rect key="frame" x="36" y="566" width="335" height="149"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4QZ-da-ggt">
+                                <rect key="frame" x="0.0" y="566" width="414" height="247"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="gg2-4m-2Ft"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-cN-cZK">
+                                <rect key="frame" x="0.0" y="144" width="55" height="54"/>
+                                <color key="tintColor" red="1" green="0.99998790029999995" blue="0.99999219179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="magnifyingglass" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="34"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTj-cg-Y0O">
+                                <rect key="frame" x="374" y="446" width="49" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="jeV-RN-Drd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <color key="tintColor" red="1" green="0.99998790029999995" blue="0.99999219179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="arrow.left.square.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYA-I6-6Ud">
+                                <rect key="frame" x="386" y="106" width="25" height="24"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.40735048220341119" blue="0.6756193329015544" alpha="0.69487235915492962" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="trailing" secondItem="4QZ-da-ggt" secondAttribute="trailing" id="21p-F8-Jcr"/>
+                            <constraint firstItem="4QZ-da-ggt" firstAttribute="top" secondItem="yg4-4S-EJl" secondAttribute="bottom" constant="26" id="8jr-S0-zI0"/>
+                            <constraint firstItem="OYA-I6-6Ud" firstAttribute="top" secondItem="6tL-id-2OE" secondAttribute="top" constant="62" id="8z9-BL-h8A"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="top" secondItem="4QZ-da-ggt" secondAttribute="bottom" id="AU0-fZ-4oi"/>
+                            <constraint firstItem="Y7F-EN-GDP" firstAttribute="leading" secondItem="6tL-id-2OE" secondAttribute="leading" constant="87" id="FUb-Mu-xi1"/>
+                            <constraint firstItem="4QZ-da-ggt" firstAttribute="top" secondItem="aya-99-oZh" secondAttribute="top" id="GIe-zD-US8"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="centerX" secondItem="Y7F-EN-GDP" secondAttribute="centerX" id="H4t-Kb-ag6"/>
+                            <constraint firstItem="OYA-I6-6Ud" firstAttribute="leading" secondItem="Y7F-EN-GDP" secondAttribute="trailing" constant="59" id="IyU-Sy-rRl"/>
+                            <constraint firstItem="OYA-I6-6Ud" firstAttribute="centerX" secondItem="HTj-cg-Y0O" secondAttribute="centerX" id="Jxj-lx-Wue"/>
+                            <constraint firstItem="aya-99-oZh" firstAttribute="leading" secondItem="6tL-id-2OE" secondAttribute="leading" constant="36" id="UDr-f5-D9l"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="centerX" secondItem="yg4-4S-EJl" secondAttribute="centerX" id="UIV-J1-1Cb"/>
+                            <constraint firstItem="4QZ-da-ggt" firstAttribute="top" secondItem="HTj-cg-Y0O" secondAttribute="bottom" constant="52" id="UZ4-NI-jEO"/>
+                            <constraint firstItem="jwn-mW-sy0" firstAttribute="top" secondItem="Zjp-cN-cZK" secondAttribute="top" id="Ucb-dK-jWT"/>
+                            <constraint firstItem="jwn-mW-sy0" firstAttribute="top" secondItem="Y7F-EN-GDP" secondAttribute="bottom" constant="8" id="YfU-bq-p47"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="bottom" secondItem="6tL-id-2OE" secondAttribute="bottom" id="Yzd-zc-dly"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="leading" secondItem="Zjp-cN-cZK" secondAttribute="leading" id="ZTr-hO-B0G"/>
+                            <constraint firstItem="Y7F-EN-GDP" firstAttribute="top" secondItem="fAo-R0-g7c" secondAttribute="topMargin" constant="-44" id="eKt-Vj-eta"/>
+                            <constraint firstItem="HTj-cg-Y0O" firstAttribute="leading" secondItem="yg4-4S-EJl" secondAttribute="trailing" constant="88.5" id="eO0-sI-lUH"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="centerX" secondItem="fAo-R0-g7c" secondAttribute="centerX" id="ozP-yr-NtH"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="leading" secondItem="4QZ-da-ggt" secondAttribute="leading" id="rBp-5m-L8z"/>
+                            <constraint firstItem="yg4-4S-EJl" firstAttribute="top" secondItem="jwn-mW-sy0" secondAttribute="bottom" constant="8" id="sQC-2T-Tm8"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="leading" secondItem="jwn-mW-sy0" secondAttribute="leading" id="tZf-nN-wfT"/>
+                            <constraint firstItem="h1S-dl-5Fb" firstAttribute="trailing" secondItem="jwn-mW-sy0" secondAttribute="trailing" id="uHQ-V5-3H7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6tL-id-2OE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="bXm-tx-Mar"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uxy-Gc-cjk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnw-Fk-LyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="94"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yz5-UJ-l1Q">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Boo-ax-xUa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x9J-AT-28t">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0OF-J5-xvW" kind="relationship" relationship="rootViewController" id="63x-mS-tq3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GrN-sW-1aT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+            <point key="canvasLocation" x="1824.6376811594205" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Blackbook(book)" width="600" height="600"/>
+        <image name="Deal #1" width="335" height="149"/>
         <image name="White (1)" width="600" height="600"/>
+        <image name="arrow.left.square.fill" catalog="system" width="64" height="56"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="house" catalog="system" width="64" height="54"/>
-        <image name="mappin.circle" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="map" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
-        <namedColor name="Offwhite">
-            <color red="0.98431372549019602" green="0.87450980392156863" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
